@@ -1,0 +1,15 @@
+#messageDudeTextarea {
+  resize: none;
+
+}
+
+.carousel-item img{
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.carousel{
+  max-width: 500px;
+  margin: auto;
+
+}

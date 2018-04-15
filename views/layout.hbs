@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{#if stylesheetLink }}<link rel='stylesheet' href='{{stylesheetLink}}'>{{/if}}
+  </head>
+  <body>
+    <div class='top-banner'>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light mb-3" id="myHeader">
+      <a class="navbar-brand" href="/"><img src="/images/home_logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <ul class="navbar-nav mr-sm-2">
+          <li class="nav-item {{#if portfolio}} active{{/if}}">
+            <a class="nav-link" title='portfolio' href="/portfolio"><img class='nav-button-image' src='/images/portfolio_button.png' alt='portfolio'> {{#if portfolio}}<span class="sr-only">(current)</span>{{/if}} </a>
+          </li>
+          <li class="nav-item {{#if shop}} active{{/if}}">
+            <a class="nav-link" title='shop' href="/shop"><img class='nav-button-image'  src='/images/shop_button.png' alt='shop'> {{#if shop}}<span class="sr-only">(current)</span>{{/if}} </a>
+          </li>
+          <li class="nav-item {{#if contact}} active{{/if}}">
+            <a class="nav-link" title="contact" href="/contact"> <img class='nav-button-image' src="/images/contact_button.png" alt='contact'> {{#if contact}}<span class="sr-only">(current)</span>{{/if}} </a>
+          </li>
+          <li class="nav-item {{#if press}} active{{/if}}">
+            <a class="nav-link" title="press" href="/press"> <img class='nav-button-image' src='images/press_button.png' alt='press'> {{#if press}}<span class="sr-only">(current)</span>{{/if}} </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class='container-fluid content'>
+      {{{body}}}
+    </div>
+
+    <!-- <nav class="footer navbar-light bg-dark text-light fixed-bottom">
+      <span>Quilts by a Dude by DLundby design LCC</span>
+      <ul class="navbar-nav" style="display: inline;">
+        <li class='nav-item'> <a class='nav-link text-white' href="https://www.instagram.com/dudequilter" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+          <li class='nav-item'> <a class='nav-link text-white' href="https://www.instagram.com/dudequilter" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+            <li class='nav-item'> <a class='nav-link text-white' href="https://www.instagram.com/dudequilter" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+      </ul>
+    </nav> -->
+    <footer class='footer'>
+      <span>Quilts by a Dude by DLundby design LCC</span>
+      <ul class= 'd-flex social-links'>
+        <li>  <a class='text-dark' href="https://www.instagram.com/dudequilter" target="_blank"> <i class="fab fa-instagram fa-2x"></i> </a></li>
+          <li> <a class='text-dark' href="https://twitter.com/Quiltsbyadude" target="_blank"> <i class="fab fa-twitter fa-2x"></i> </a></li>
+            <li> <a class='text-dark' href="https://www.linkedin.com/in/daniel-lundby-b16013142/" target="_blank"> <i class="fab fa-linkedin-in fa-2x"></i> </a></li>
+            <li> <a class='text-dark' href="https://www.etsy.com/shop/ColorDude" target="_blank"> <i class="fab fa-etsy fa-2x"></i> </a></li>
+      </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src='/js/header_script.js'></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  </body>
+</html>

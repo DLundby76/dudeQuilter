@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col">
+
+    <h1>Portfolio</h1>
+    <div class="row">
+      {{#each projects}}
+      <div class="col-lg-4 col-md-6 col-sm-12" id='port-images'>
+        <picture data-toggle="modal" data-target="#{{element}}">
+          {{#each pictureSources}}
+          <source media="{{media}}" sizes="{{sizes}}" srcset="{{srcset}}">
+            {{/each}}
+      <img sizes='{{pictureImage.sizes}}'srcset="{{pictureImage.srcset}}" src="{{pictureImage.src}}" alt="">
+        </picture>
+
+        <!-- Modal -->
+        <div class="modal fade" id="{{element}}" tabindex="-1" role="dialog" aria-labelledby="{{element}}" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div id="{{element}}caroselControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    {{#each modalImages}}
+                    <div class="carousel-item {{#if active}}active {{/if}}" >
+                      <img class="d-block w-100" src="{{url}}" alt="{{alt}}">
+                    </div>
+                    {{/each}}
+                  </div>
+                  <a class="carousel-control-prev" href="#{{element}}caroselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#{{element}}caroselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <p> {{description}} </p>
+                {{#if buyUrl}}<a href='{{buyUrl}}' target='_blank'> Buy me.</a>{{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4">
+      </div>
+    </div>
+  </div>
+</div>

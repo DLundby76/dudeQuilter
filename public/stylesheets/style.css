@@ -1,0 +1,92 @@
+body{
+  min-height: 100vh;
+}
+
+
+.navbar-brand img{
+  height: 75px;
+  width: 75px;
+  max-width: 75px;
+  max-height: 75px;
+
+  }
+
+  .top-banner{
+    height: 100px;
+    background-color: grey;
+    background: url('/images/silver-diamond-plate.jpg') no-repeat;
+    background-size: cover;
+
+
+  }
+
+  .nav-button-image{
+    height: 75px;
+    width: 149.33px;
+    max-height: 75px;
+    max-width: 149.33px;
+  }
+
+.main-logo{
+  width: 800px;
+  margin-bottom: 50px;
+}
+
+.bio-section{
+  background-color: grey;
+  background: url('/images/silver-diamond-plate.jpg') no-repeat;
+  background-size: cover;
+
+}
+
+.daniel-image{
+  width: 333.4px;
+  height: 500px;
+  border: 10px solid grey;
+}
+
+.bio-info{
+  background-color: grey;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.navbar{
+  background-color: #868e96;
+}
+
+.footer{
+  background-color: #868e96;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.footer-brand{
+  background-color: #868e96;
+}
+
+.social-links{
+  list-style: none;
+  float:right;
+  margin: 0;
+
+}
+
+.social-links li{
+margin-right: 20px;
+}
