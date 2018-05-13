@@ -90,3 +90,18 @@ body{
 .social-links li{
 margin-right: 20px;
 }
+
+#messageDudeForm{
+  background-color: #868e96;
+  padding: 20px;
+}
+
+.submit-button{
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
+
+}
+
+.submit-button:hover{
+cursor: pointer;
+}

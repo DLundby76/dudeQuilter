@@ -221,7 +221,6 @@ router.get('/contact', function(req, res, next) {
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
     const instafeed = JSON.parse(body).data;
-    console.log(JSON.parse(body).data[0])
     instafeed[0].active = true;
     res.render('contact', {
       title: 'Quilts by a Dude',

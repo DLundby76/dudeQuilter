@@ -14,16 +14,19 @@
         <label for="messageDudeTextarea">Message to the Dude</label>
         <textarea class="form-control" id="messageDudeTextarea" name='message' rows="7"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit " class="submit-button"><img class='nav-button-image' src="/images/contact_button.png" alt='contact'></button>
     </form>
 
   </div>
   <div class="col-md-6">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide instagram-slides" data-ride="carousel">
       <div class="carousel-inner">
         {{#each instafeed}}
         <div class="carousel-item {{#if active}}active{{/if}}">
           <img class="d-block" src="{{images.standard_resolution.url}}" alt="First slide">
+          <h4> {{caption.from.full_name}} </h4>
+          <h5> {{caption.text}} </h5>
+          <h5> <i class="far fa-heart"></i>{{likes.count}} </h5>
         </div>
         {{/each}}
       </div>
@@ -36,7 +39,6 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-
 
   </div>
 </div>

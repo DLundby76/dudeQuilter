@@ -6,10 +6,17 @@
 .carousel-item img{
   max-height: 500px;
   max-width: 500px;
+  margin:auto;
+  border: 7px solid grey;
 }
 
 .carousel{
   max-width: 500px;
   margin: auto;
 
+}
+
+
+.footer{
+  position:inherit;
 }
