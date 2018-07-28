@@ -1,0 +1,44 @@
+[{
+   "name": "Return_of_the_jedi_star_wars_quilt",
+   "element": "quilt1",
+   "pictureSources": [{
+       "media": "(max-width: 767px)",
+       "sizes": "(max-width: 322px) 100vw, 322px",
+       "srcset": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_ar_1_1,c_fill,g_auto__c_scale,w_200.jpg 200w,/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_ar_1_1,c_fill,g_auto__c_scale,w_306.jpg 306w, /images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_ar_1_1,c_fill,g_auto__c_scale,w_322.jpg 322w"
+     },
+     {
+       "media": "(min-width: 768px) and (max-width: 991px)",
+       "sizes": "(max-width: 460px) 70vw, 322px",
+       "srcset": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_ar_4_3,c_fill,g_auto__c_scale,w_322.jpg 322w"
+     },
+     {
+       "media": "(min-width: 992px) and (max-width: 1199px)",
+       "sizes": "(max-width: 537px) 60vw, 322px",
+       "srcset": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_ar_16_9,c_fill,g_auto__c_scale,w_322.jpg 322w"
+     }
+   ],
+   "pictureImage": {
+     "sizes": "(max-width: 805px) 40vw, 322px",
+     "srcset": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_c_scale,w_322.jpg 322w",
+     "src": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_c_scale,w_322.jpg"
+   },
+   "buyUrl": "https://www.etsy.com/listing/582201730/star-wars-quilt-vintage-star-wars-empire?ref=listings_manager_grid",
+   "description": "blah blah blah about the quilt.",
+   "modalImages": [{
+       "url": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_main_image_pqiysr_c_scale,w_322.jpg",
+       "alt": "star wars quilt",
+       "active": true
+
+     },
+     {
+       "url": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_closeup_nrylvq_c_scale,w_322.jpg",
+       "alt": "star wars quilt"
+     },
+     {
+       "url": "/images/ROTJ_star_wars_quilt/ROTJ_StarWars_quilting_closeup_xpivmg_c_scale,w_322.jpg",
+       "alt": "star wars quilt"
+     }
+
+   ]
+ }
+ ]
